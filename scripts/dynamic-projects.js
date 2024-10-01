@@ -1,5 +1,6 @@
 async function fetchGitHubProjects() {
     const response = await fetch('https://api.github.com/users/alwrence9/repos');
+    // const response = await fetch('api/repos.json');
     return await response.json();
 }
 
@@ -35,11 +36,15 @@ function createProjects(repos) {
         info_text.appendChild(description);
 
         const infoLinks = document.createElement("div");
-        projectBox.appendChild(infoLinks);
+        info_text.appendChild(infoLinks);
 
         const projectLink =  document.createElement("a");
+        projectLink.classList.add("link__text");
+        projectLink.textContent = "Visit project"
         projectLink.href = repo.html_url;
         infoLinks.appendChild(projectLink);
+
+        projectBox.appendChild(info_text);
 
         workBoxes.appendChild(projectBox);
     });
