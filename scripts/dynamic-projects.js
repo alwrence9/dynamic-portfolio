@@ -40,8 +40,9 @@ function createProjects(repos) {
 
         const projectLink =  document.createElement("a");
         projectLink.classList.add("link__text");
-        projectLink.textContent = "Visit project"
+        projectLink.textContent = "Visit project";
         projectLink.href = repo.html_url;
+        projectLink.target = "_blank";
         infoLinks.appendChild(projectLink);
 
         projectBox.appendChild(info_text);
