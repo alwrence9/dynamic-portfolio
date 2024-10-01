@@ -65,33 +65,34 @@ In all of the places where you're supposed to fill your information you'll find 
 Each div with class `work__box` represents a project, replace the contents of the all the tags with the information of your projects.
 
 ```html
-<div class="work__box">
-    <div class="work__text">
-    <h3>Portfolio Template</h3>
-    <p>
-        A free Open Source Portfolio for anyone to use for free.
-    </p>
-    <ul class="work__list">
-        <li>HTML</li>
-        <li>SCSS</li>
-        <li>JavaScript</li>
-        <li>Parcel</li>
-    </ul>
 
-    <div class="work__links">
-        <a href="#" class="link__text">
-        Visit Site <span>&rarr;</span>
-        </a> 
-        <a href="https://github.com/nisarhassan12/portfolio" target="_blank">
-        <img src="./images/github.svg" class="work__code" alt="GitHub">
-        </a>
-    </div>
+<div class="info__box">
+    <div class="info__text">
+        <h3>Portfolio Template</h3>
+        <p>
+            A free Open Source Portfolio for anyone to use for free.
+        </p>
+        <ul class="work__list">
+            <li>HTML</li>
+            <li>SCSS</li>
+            <li>JavaScript</li>
+            <li>Parcel</li>
+        </ul>
+
+        <div class="info__links">
+            <a href="#" class="link__text">
+                Visit Site <span>&rarr;</span>
+            </a>
+            <a href="https://github.com/nisarhassan12/portfolio" target="_blank">
+                <img src="./images/github.svg" class="info__code" alt="GitHub">
+            </a>
+        </div>
     </div>
     <div class="work__image-box">
         <img
-            src="./images/project-1.png"
-            class="work__image"
-            alt="Project 1"
+                src="./images/project-1.png"
+                class="work__image"
+                alt="Project 1"
         />
     </div>
 </div>
